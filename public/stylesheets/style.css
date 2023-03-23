@@ -8,7 +8,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: black;
 }
 
 main,
@@ -35,11 +35,8 @@ a {
 
 button {
     background-color: #225ca3;
-    border: 0;
     padding: 1%;
     color: white;
-    font-weight: bold;
-    transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -55,7 +52,7 @@ button:hover {
 }
 
 .go-back {
-    color: #2c2307;
+    color: black;
 }
 
 textarea,
@@ -103,7 +100,7 @@ header,
 .site-row,
 .info-section,
 .form-heading {
-    background-color: #2c2307;
+    background-color: black;
 }
 
 .login-page,
@@ -132,8 +129,8 @@ header,
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: inline flex;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 1%;
 }
@@ -145,13 +142,17 @@ header h1 {
 .site-row {
     display: flex;
     border-bottom: 1px solid #ccc;
-    justify-content: center;
+    padding: 10px;
+    float: left;
 }
 
 .site-name {
     margin-bottom: 10px;
-    padding: 0px 10px;
-    border-style: double;
+    padding: 10px;
+    box-shadow: 10px 10px lightgray;
+    border-radius: 8px;
+    padding: 5px;
+    
 }
 
 main {
@@ -222,6 +223,7 @@ main {
 
 .new-post-form input {
     width: 300px;
+    align-items: center;
 }
 
 .edit-post-form {
@@ -263,5 +265,5 @@ main {
 .login-signup-btn,
 .btn,
 #post-title {
-    width: 100%;
+    width: 95%;
 }
